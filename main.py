@@ -1,4 +1,5 @@
 import types
+from tools import logger
 
 
 class FlatIterator:
@@ -28,6 +29,7 @@ class FlatIterator:
         return item
 
 
+@logger
 def test_1():
     list_of_lists_1 = [
         ['a', 'b', 'c'],
